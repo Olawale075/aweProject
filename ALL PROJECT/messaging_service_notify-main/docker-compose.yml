@@ -1,0 +1,37 @@
+version: "3.7"
+services:
+  # postgres:
+  #   container_name: postgres
+  #   image: postgres:latest
+  #   ports:
+  #     - 5432:5432
+  #   networks:
+  #     - gnotify
+  #   environment:
+  #     - POSTGRES_DB=gnotify
+  #     - POSTGRES_USER=postgres
+  #     - POSTGRES_PASSWORD=password
+  gnotify:
+    container_name: gnotify
+    image: gnotify:latest
+    healthcheck:
+      timeout: 10s
+      retries: 10
+    ports:
+      - 8082:8082
+      #- 443:443
+    networks:
+      - gnotify
+    # depends_on:
+    #   - postgres
+    environment:
+      - GNOTIFY_APP_JWT_SECRET= gnotifyapp
+      - GNOTIFY_APP_JWT_EXPIRATION_MS= 86400000
+      - CODEVERSE_TERMS_OF_USE=https://codeverse.com.ng/terms-of-use/
+      - DB_USERNAME= postgres
+      - DB_PASSWORD= password
+      - DB_URL=jdbc:postgresql://localhost:5432/gnotify
+
+networks:
+  gnotify:
+    driver: bridge

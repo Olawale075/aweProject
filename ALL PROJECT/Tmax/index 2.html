@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tmax Project</title>
+    <style>
+      #myh1 {
+        color: rgb(133, 10, 10);
+        background-color: black;
+      }
+.forms{
+  background-color: blueviolet;
+}
+
+.table{
+  background-color: cadetblue;
+  border: 10px solid black;
+}
+.tables{
+  background-color: greenyellow;
+  border: 10px solid black;
+}
+      .greentext {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This is html heading -->
+    <header>
+      <h1 id="myh1">This is heading 1</h1>
+      <div class="greentext">my name is <b>Ayo</b></div>
+      <h2>this is heading 2</h2>
+      <h3>this is heading 3</h3>
+      <h4 class="greentext boldtext underlined text">this is heading 4</h4>
+      <h5>this is heading 5</h5>
+      <h6>this is heading 6</h6>
+    </header>
+    <hr>
+    <!-- end of html heading -->
+
+    <!-- This is html paragraph -->
+    <p>This is <span>html</span> paragraph</p>
+    <hr>
+    <!-- end of html paragraph -->
+
+    <!-- This is html div -->
+    <div>This is html div</div>
+    <div>my name is <b>olawale toheeb</b></div>
+    <div>This is <u>Underline</u></div>
+    <div>This is <i>Italics</i></div>
+    <div>This is <strong>Strong</strong></div>
+    <div>This is <emp>Emphasise</emp></div>
+    <div>This is <del>Delete</del></div>
+    <div>This is a <sub>subscript</sub></div>
+    <div>This is<sup>superscript</sup></div>
+    <div>x<sup>2</sup></div>
+    <div>H<sub>2</sub>O</div>
+    <div><blockquote>my name is toheeb</blockquote></div>
+    <div><address>No 2,ololke street,Abk.</address></div>
+    <hr>
+    <!-- end of html div -->
+
+    <!-- This is html ordered lists -->
+    <ol>
+      <li>rice</li>
+      <li>bean</li>
+      <li>garri</li>
+      <li>eba</li>
+      <li>amala</li>
+    </ol>
+    <!-- end of html ordered lists -->
+
+    <!-- This is html unordered lists  -->
+    <ul>
+      <li>Ogun</li>
+      <li>Osun</li>
+      <li>Oyo</li>
+    </ul>
+    <hr>
+    <!-- End of html unordered lists  -->
+
+    <!-- This is html definitive list  -->
+    <dl>
+      <dt>Nigeria</dt>
+      <dd>is a country</dd>
+    </dl>
+
+    <dl>
+      <dt class="greentext">NIGERIA</dt>
+      <dd>is a good country</dd>
+    </dl>
+
+    <dl>
+      <!-- This is a definitive list -->
+      <dt class="greentext">QATAR</dt>
+      <dd>is hosting world cup</dd>
+      <dt class="greentext">BUHARI</dt>
+      <dd>is a sick man</dd>
+    </dl>
+    <hr>
+    <!-- end of html definitive lists  -->
+
+    <!-- This is html table  -->
+    <table border="10px solid black" class="tables">
+      <tr>
+        <th>Day</th>
+        <th colspan="2">Time</th>
+        <!-- <th>Time</th> -->
+      </tr>
+      <tr>
+        <td rowspan="2">Mon\Wed</td>
+        <td rowspan="2">9-12</td>
+        <td>12-3</td>
+      </tr>
+      <tr>
+        <!-- <td>9-12</td> -->
+        <td>12-3</td>
+      </tr>
+      <tr>
+        <td>Fri</td>
+        <td colspan="2">9-3</td>
+        <!-- <td>12-3</td> -->
+      </tr>
+    </table>
+    <table border="green solid 1px" class="table">
+      <tr>
+        <th>surname</th>
+        <th>firstname</th>
+        <th>matric no</th>
+      </tr>
+      <tr>
+        <td rowspan="2">olawale</td>
+        <td>bola</td>
+        <td rowspan="2">92/92/0025</td>
+      </tr>
+      <tr>
+        <!-- <td>olawale</td> -->
+        <td>shola</td>
+        <!-- <td>55/77/0088</td> -->
+      </tr>
+      <tr>
+        <td>ogunbowale</td>
+        <td>shade</td>
+        <td>55/70/0098</td>
+      </tr>
+    </table>
+    <!-- end of html table  -->
+    <p>H<sub>2</sub>O + co<sub>2</sub></p>
+    
+    <!-- HTML IMAGE -->
+    <img src="./media/images/cats/IMG_E7695.JPG" height="150px" width="150px" />
+    <!-- End of html IMAGE -->
+    <!-- <audio src="./media/audio/2 face - true love.mp3" controls  > -->
+    <hr />
+    <!-- HTML FORM  -->
+    <form method="post" action="#" class="forms">
+      <fieldset>
+
+        <legend>
+          <strong>Personal Data</strong>
+        </legend>
+
+        <label for="firstname">First name: </label><br />
+        <input type="text" name="firstname" id="firstname" /><br />
+        
+        <label for="lname">Last name: </label><br />
+        <input type="text" name="lname" id="lname" /><br />
+        <hr />
+        
+        <label for="email">Email: </label><br />
+        <input type="email" name="email" id="email" /><br />
+        <hr />
+        
+        <label for="no">Phone number: </label><br />
+        <input type="tel" name="no" id="no" /><br />
+        <hr />
+        <input type="radio" name="gender" value="Male" />
+        <label for="gender">Male </label><br />
+        <input type="radio" name="gender" value="Female" />
+        <label for="gender">Female </label><br />
+        <hr />
+        
+        <input type="checkbox" name="data1" id="data1" value="age" />
+        <label for="device1">I am 18years and above.</label><br />
+        <input type="checkbox" name="data2" id="data2" value="country" />
+        <label for="device2">I live in Nigeria.</label><br />
+        <input type="checkbox" name="data3" id="data3" value="PVC" />
+        <label for="device3">I have my PVC.</label><br />
+        <hr />
+        
+        <label for="local">L.G.A</label>
+        <select name="LGA" id="local" />
+        <option value="ABK NORTH">ABK NORTH</option>
+        <option value="ABK SOUTH">ABK SOUTH</option>
+        <option value="EWEKORO">EWEKORO</option>
+        <option value="IFO">IFO</option>
+        <option value="ODEDA">ODEDA</option>
+      </select>
+      <br>
+      <br>
+      <input type="submit" value="Submit"><br>
+  </fieldset>
+  </form>
+  <!-- END OF HTML FORM  -->
+</body>
+</html>
