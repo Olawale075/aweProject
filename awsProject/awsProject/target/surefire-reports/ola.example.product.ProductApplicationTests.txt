@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ola.example.product.ProductApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 17.528 s - in ola.example.product.ProductApplicationTests
